@@ -1,0 +1,117 @@
+.body {
+    background: url("../public/background1.png");
+    background-size: 100%;
+}
+
+.card {
+    width: 55%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 {
+    margin-top: 50px;
+    font-size: 5vh;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(to top right, #2784f0, #27b1ec);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    width: fit-content;
+}
+
+.card h3 {
+    margin-top: 50px;
+    font-size: 5vh;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content;
+}
+
+.form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h4 {
+    font-size: 1.2em;
+    font-family: "Lato";
+    color: #969696;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.form div input {
+    border-style: none;
+    border: 2px solid #969696;
+    border-radius: 12px;
+    width: 340px;
+    height: 50px;
+    margin-top: 3px;
+    font-size: 1.5em;
+    padding-left: 10px;
+    outline: none;
+    transition: 1s;
+}
+
+.form div input:focus {
+    border-radius: 0;
+    border: 2px solid #2784f0;
+    width: 350px;
+    height: 55px;
+    font-size: 1.7em;
+    color: #2784f0;
+}
+
+.form .button {
+    margin-top: 70px;
+    padding: 20px;
+    background: #2784f0;
+    width: 180px;
+    font-size: 1.5em;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 0;
+    outline: none;
+    transition: 1s;
+}
+
+.form .button:hover {
+    font-size: 1.7em;
+    width: 200px;
+    padding: 25px;
+    background: #27b1ec;
+}
+
+.card p {
+    font-size: 1em;
+    font-family: "Poppins";
+    color: #969696;
+    margin-top: 40px;
+}
+
+.card .signin {
+    color: #2784f0;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Poppins";
+    transition: 1s;
+}
+
+.card .signin:hover {
+    font-size: 1.2em;
+}
