@@ -1,0 +1,346 @@
+.content {
+    background: url("../public/background1.png");
+    background-size: 100%;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.header h2 {
+    font-size: 4vh;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(to top right, #2784f0, #27b1ec);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    width: fit-content;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header div p {
+    font-size: 1.2em;
+    font-family: "Poppins";
+    color: #007cff;
+    margin-right: 5px;
+}
+
+.header div h3 {
+    font-size: 1.5em;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2784f0;
+}
+
+.header .button {
+    padding: 10px 25px;
+    border: 1px solid #2784f0;
+    font-size: 0.7em;
+    font-family: "Poppins";
+    color: #2784f0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.body .chat {
+    height: 580px;
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 90px;
+    border-radius: 20px;
+}
+
+.body .chat h2 {
+    margin: 20px 40px;
+    font-size: 1.2em;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #007cff;
+}
+
+.body .chat .messages {
+    margin: 10px 30px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.body .chat .messages .user {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body .chat .messages .user div p {
+    margin-top: 5px;
+    padding: 10px 15px;
+    background: #007cff;
+    width: fit-content;
+    max-width: 400px;
+    color: white;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.body .chat .messages .friend div p {
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background: white;
+    width: fit-content;
+    max-width: 400px;
+    color: #007cff;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.body .chat .sendMessage {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body .chat .sendMessage .message {
+    height: 40px;
+    width: 600px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #969696;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+.body .chat .sendMessage .button {
+    outline: none;
+    height: 40px;
+    width: 150px;
+    font-size: 0.8em;
+    font-family: "Poppins";
+    padding: 10px 20px;
+    background: #2784f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.body .friends {
+    height: 580px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 90px;
+    border-radius: 20px;
+}
+
+.body .friends h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #183657;
+}
+
+.body .friends .addFriend {
+    margin: 10px 10px 10px 25px;
+}
+
+.body .friends .addFriend input {
+    width: 450px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #969696;
+    font-size: 1em;
+    font-family: "Poppins";
+    padding: 0 10px;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.body .friends .addFriend input:focus {
+    height: 35px;
+    border: 1px solid #2784f0;
+    font-size: 1.2em;
+    color: #2784f0;
+}
+
+.body .friends .addFriend button {
+    margin-left: 5px;
+    width: 100px;
+    height: 30px;
+    transition: 0.5s;
+    border: none;
+    font-size: 0.8em;
+    font-family: "Poppins";
+    color: white;
+    background: #2784f0;
+    border-radius: 5px;
+}
+
+.body .friends .addFriend button:hover {
+    width: 100px;
+    height: 35px;
+    background: #27b1ec;
+}
+
+.body .friends .friendsCards {
+    height: 460px;
+    width: 98%;
+    overflow: auto;
+}
+
+.body .friends .friendsCards .requestCard {
+    margin: 5px 25px 20px 25px;
+    width: 540px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body .friends .friendsCards .requestCard p {
+    color: #007cff;
+    font-size: 1em;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.body .friends .friendsCards .requestCard strong {
+    color: #007cff;
+    font-size: 1em;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.body .friends .friendsCards .requestCard div .accept {
+    margin: 10px;
+    font-size: 0.7em;
+    font-family: "Poppins";
+    color: white;
+    background: #2784f0;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.body .friends .friendsCards .requestCard div .decline {
+    margin: 10px;
+    font-size: 0.7em;
+    font-family: "Poppins";
+    color: #2784f0;
+    background: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #2784f0;
+}
+
+
+.body .friends .friendsCards .card {
+    margin: 5px 25px 20px 25px;
+    width: 540px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: white;
+    transform: 1s;
+}
+
+.body .friends .friendsCards .card .cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body .friends .friendsCards .card .cardHeader div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body .friends .friendsCards .card .cardHeader div h3 {
+    color: #2784f0;
+    font-size: 1em;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.body .friends .friendsCards .card .cardHeader div h4 {
+    color: #2784f0;
+    font-size: 0.9em;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.body .friends .friendsCards .card .cardHeader button {
+    background: #2784f0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.7em;
+    font-family: "Poppins";
+    color: white;
+    border-radius: 10px;
+}
+.body .friends .friendsCards .card .cardBody .title {
+    font-size: 0.9em;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #255992;
+}
+
+.body .friends .friendsCards .card .cardBody .message {
+    font-size: 0.8em;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #255992;
+    margin-bottom: 15px;
+}
+
+.footer {
+    position: fixed;
+    top: 95%;
+    width: 100vw;
+    height: 40px;
+    font-size: 1em;
+    font-family: "Poppins"; 
+    color: #2784f0;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
